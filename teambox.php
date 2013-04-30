@@ -11,10 +11,14 @@ $teambox_new = new teambox();
 	$app_secret = 'GJvA1Yft7wMXsInqq4ROvPULc1lOLyEPQXaLCPfh';
 	$token_url = 'https://teambox.com/oauth/token';
 	$auth_url = 'https://teambox.com/oauth/authorize';
+	$client_id = ;
+	$returned_code = ;
+	$auth_code = ;
 	
-	$apiurl   = $auth_url . "?client_id=" . 
-	
+	$apiurl   = '' ; 
+	$apiurl   = $token_url . "?client_id=" .$client_id. "&client_secret=" .$app_secret. "&code=" .$returned_code. "&grant_type=" .$auth_code. "&redirect_uri=http%3A%2F%2Fthewebsiteguys.co.nz%2Fauth";
     $httphead = array('User-agent: WHMCSTeamboxModule (sysadmin@thewebsiteguys.co.nz)');
+    
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $apiurl);
