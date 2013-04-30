@@ -14,14 +14,13 @@ $teambox_new = new teambox();
 	
 	$apiurl   = $auth_url . "?client_id=" . 
 	
-	"https://basecamp.com/{$this->accountid}/api/{$this->version}/{$path}";
     $httphead = array('User-agent: WHMCSTeamboxModule (sysadmin@thewebsiteguys.co.nz)');
 	
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $apiurl);
 	curl_setopt($ch, CURLOPT_HEADER, 0);
 	curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-	curl_setopt($ch, CURLOPT_USERPWD, $this->username . ":" . $this->password);
+	curl_setopt($ch, CURLOPT_USERPWD, "andrewgood:Gianttcr11");
 	curl_setopt($ch, CURLOPT_HTTPHEADER, $httphead);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
