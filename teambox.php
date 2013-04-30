@@ -11,8 +11,8 @@ $teambox_new = new teambox();
 	$app_secret = 'GJvA1Yft7wMXsInqq4ROvPULc1lOLyEPQXaLCPfh';
 	$token_url = 'https://teambox.com/oauth/token';
 	$auth_url = 'https://teambox.com/oauth/authorize';
-	$client_id = ;
-	$returned_code = ;
+	$client_id = 'andrewgood' ;
+	$returned_code = '1' ;
 	$auth_code = ;
 	
 	$apiurl   = '' ; 
